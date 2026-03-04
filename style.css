@@ -6,8 +6,8 @@ grid-template-areas:
 "cabeca cabeca"
 "braco corpo"
 "pe pe";
-grid-template-rows: 100px 500px 100px;
-grid-template-columns: 400px auto;
+grid-template-rows: 100px auto 100px;
+grid-template-columns: 200px auto;
 }
 
 
@@ -57,6 +57,27 @@ grid-template-areas:
 grid-template-rows: 100px 50px auto 100px;
 grid-template-columns: auto;
 }
+.letra{
+   color: #54cc54;
+   background-color #e73838;
+}
+}
+
+@media only screen and (max-width: 450px){
+body{
+   display: grid;
+   grid-template-areas: 
+   "cabeca"
+   "corpo"
+   "pe";
+   grid-template-rows: 100px 500px 100px;
+   grid-template-columns: auto;
+   
+}
+aside{
+   display: none;
+}
+
 }
 
 
@@ -77,3 +98,38 @@ grid-template-columns: auto;
 
 }
 
+.imagem_produto{
+   width: 320px;
+}
+
+.d_produto{
+   color: #eca4a4;
+   font-size: xx-large;
+}
+
+.p_produto{
+color: deeppink;
+font-size: 40px;
+}
+
+.botao_produto{
+font-size: 30px;
+background-color: blue;
+width: 50%;
+text-decoration: none;
+height: 50px;
+border-radius: 20px;
+}
+
+.letra_botao{
+   display: block;
+   text-align: center;
+   text-decoration: none;
+   color: aliceblue;
+}
+
+.mae{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
