@@ -59,3 +59,21 @@ grid-template-columns: auto;
 }
 }
 
+
+
+.card{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 50px;
+   align-items: center;
+   border: yellow 2px solid;
+   background-color: darkmagenta;
+   width: 400px;
+   height: 650px;
+   border-radius: 10px;
+   text-align: center;
+   margin: 10px;
+
+}
+
