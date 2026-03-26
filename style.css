@@ -14,7 +14,7 @@ grid-template-columns: 200px auto;
 
 
 header{
- background-color: aqua;
+ background-color: red;
  grid-area: cabeca;
 
 
@@ -22,7 +22,7 @@ header{
 }
 
 main{
-background-color: blue;
+background-color: white;
  grid-area: corpo;
 
 
@@ -31,7 +31,7 @@ background-color: blue;
 }
 
 footer{
-background-color: brown;
+background-color: red;
  grid-area: pe;
 
 
@@ -39,7 +39,7 @@ background-color: brown;
 }
 
 aside{
-background-color: chartreuse;
+background-color: gray;
  grid-area: braco;
 
 
@@ -57,10 +57,6 @@ grid-template-areas:
 grid-template-rows: 100px 50px auto 100px;
 grid-template-columns: auto;
 }
-.letra{
-   color: #54cc54;
-   background-color #e73838;
-}
 }
 
 @media only screen and (max-width: 450px){
@@ -70,7 +66,7 @@ body{
    "cabeca"
    "corpo"
    "pe";
-   grid-template-rows: 100px 500px 100px;
+   grid-template-rows: 100px auto 100px;
    grid-template-columns: auto;
    
 }
@@ -88,14 +84,20 @@ aside{
    justify-content: space-between;
    padding: 50px;
    align-items: center;
-   border: yellow 2px solid;
-   background-color: darkmagenta;
+   border: none;
+   background-color: rgb(115, 181, 243);
+   box-shadow: 0 4px 8px rgb(21, 27, 28);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
    width: 400px;
    height: 650px;
    border-radius: 10px;
    text-align: center;
    margin: 10px;
+}
 
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(32, 55, 56, 0.911);
 }
 
 .imagem_produto{
@@ -103,12 +105,12 @@ aside{
 }
 
 .d_produto{
-   color: #eca4a4;
+   color: #000000;
    font-size: xx-large;
 }
 
 .p_produto{
-color: deeppink;
+color: rgb(0, 0, 0);
 font-size: 40px;
 }
 
