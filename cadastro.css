@@ -1,0 +1,138 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(10, 10, 10);
+    color: rgba(15, 175, 23, 0.9);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.cabeca {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: black;
+    box-shadow: 0 2px 10px rgba(15, 175, 23, 0.3);
+}
+
+.logo {
+    color: #00ff88;
+}
+
+.btn-carrinho-header {
+    text-decoration: none;
+    color: #00ff88;
+    border: 1px solid #00ff88;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-carrinho-header:hover {
+    background-color: #00ff88;
+    color: black;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-cadastro {
+    background-color: #111;
+    padding: 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-cadastro h2 {
+    text-align: center;
+    color: #00ff88;
+    margin-bottom: 10px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.campo input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background-color: #000;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+.campo input:focus {
+    border-color: #00ff88;
+    box-shadow: 0 0 5px #00ff88;
+}
+
+.btn-cadastrar {
+    padding: 12px;
+    background-color: #00ff88;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-cadastrar:hover {
+    background-color: #00cc6a;
+    transform: translateY(-2px);
+}
+
+.login-link {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.login-link a {
+    color: #00ff88;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: black;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #222;
+    font-size: 0.85rem;
+    color: #ccc;
+}
+
+@media (max-width: 500px) {
+    .form-cadastro {
+        padding: 20px;
+    }
+}
