@@ -76,11 +76,6 @@ btnComprar.addEventListener("click", () => {
 });
 
 btnCarrinho.addEventListener("click", () => {
-    let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
-
-    carrinho.push(produtos[id]);
-
-    localStorage.setItem("carrinho", JSON.stringify(carrinho));
-
+    
     alert("Produto adicionado ao carrinho!");
 });
