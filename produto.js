@@ -1,48 +1,49 @@
 
 const produtos = {
-    ps3: {
-        nome: "PS3",
-        preco: "R$ 100",
-        imagem: "imagems/ps3.jpg.jpg",
-        descricao: "Console Playstation 3 clássico.",
-        detalhes: "Possui diversos jogos incríveis e ótimo custo benefício."
-    },
 
-    xbox36: {
-        nome: "Xbox 360",
-        preco: "R$ 50",
-        imagem: "imagems/xbox360.png",
-        descricao: "Console Xbox 360.",
-        detalhes: "Perfeito para jogos antigos e multiplayer local."
-    },
+    ps1: {
+        nome: "PS1",
+        preco: "R$ 700",
+        imagem: "imagems/ps1.png",
+        descricao: "Primeiro Playstation.",
+        detalhes: "Clássico retrô para fãs de nostalgia."
+    }, 
 
     ps2: {
         nome: "PS2",
-        preco: "R$ 50",
+        preco: "R$ 900",
         imagem: "imagems/ps2.png",
         descricao: "Playstation 2 raiz.",
         detalhes: "Um dos consoles mais vendidos da história."
     },
 
-    ps1: {
-        nome: "PS1",
-        preco: "R$ 30",
-        imagem: "imagems/ps1.png",
-        descricao: "Primeiro Playstation.",
-        detalhes: "Clássico retrô para fãs de nostalgia."
+    ps3: {
+        nome: "PS3",
+        preco: "R$ 1.500",
+        imagem: "imagems/ps3.jpg.jpg",
+        descricao: "Console Playstation 3 clássico.",
+        detalhes: "Possui diversos jogos incríveis e ótimo custo benefício."
     },
 
     xbox: {
         nome: "Xbox Clássico",
-        preco: "R$ 40",
+        preco: "R$ 1.800",
         imagem: "imagems/xbox.png",
         descricao: "Primeiro Xbox.",
         detalhes: "Console raiz da Microsoft."
     },
 
-    dream: {
+    xbox36: {
+        nome: "Xbox 360",
+        preco: "R$ 1.000",
+        imagem: "imagems/xbox360.png",
+        descricao: "Console Xbox 360.",
+        detalhes: "Perfeito para jogos antigos e multiplayer local."
+    },
+
+    dreamcast: {
         nome: "Dreamcast",
-        preco: "R$ 20",
+        preco: "R$ 1.500",
         imagem: "imagems/dreamcast.png",
         descricao: "Console da Sega.",
         detalhes: "Apesar de pouco popular, tem jogos excelentes."

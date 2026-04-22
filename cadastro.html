@@ -3,60 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Login - Database</title>
     <link rel="stylesheet" href="cadastro.css">
 </head>
 <body>
 
-<header class="cabeca">
-    <h1 class="logo">Loja</h1>
-
-    <a href="index.html" class="btn-carrinho-header">voltar</a>
-
-</header>
-
-<main class="container">
-
-    <form class="form-cadastro" id="formCadastro">
-
-        <h2>Crie sua conta</h2>
-
-        <div class="campo">
-            <label>Nome completo</label>
-            <input type="text" placeholder="Digite seu nome" required>
+<main class="giovana">
+    <div class="headerlogin">
+        <h2>NOVO USUARIO</h2>
+    </div>
+    
+    <form class="formsimples" id="meuForm">
+        <div class="inputgroup">
+            <label>> NOME COMPLETO</label>
+            <input type="text" required>
         </div>
 
-        <div class="campo">
-            <label>Email</label>
-            <input type="email" placeholder="Digite seu email" required>
+        <div class="inputgroup">
+            <label>> EMAIL</label>
+            <input type="email" required>
         </div>
 
-        <div class="campo">
-            <label>Senha</label>
-            <input type="password" placeholder="Digite sua senha" required>
+        <div class="inputgroup">
+            <label>> SENHA</label>
+            <input type="password" required>
         </div>
 
-        <div class="campo">
-            <label>Confirmar senha</label>
-            <input type="password" placeholder="Confirme sua senha" required>
-        </div>
-
-        <button type="submit" class="btn-cadastrar">
-            Cadastrar
-        </button>
-
-        <p class="login-link">
-            Já tem conta? <a href="#">Entrar</a>
-        </p>
-
+        <button type="submit" class="butao">EXECUTAR CADASTRO</button>
     </form>
-
+    
+    <div class="footerlogin">
+        <a href="index.html">Sair do sistema</a>
+    </div>
 </main>
 
-<footer class="footer">
+<script>
+    // redireciona
+    document.getElementById('meuForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Pag n carrega normal
+        
+        alert("Cadastro realizado!");
+        
+        window.location.href = "index.html"; // Manda pra pag inicial
+    });
+</script>
 
-</footer>
-
-<script src="cadastro.js"></script>
 </body>
 </html>
