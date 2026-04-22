@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -24,7 +23,12 @@ body {
 }
 
 .logo {
-    color: #00ff88;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #169600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .btn-carrinho-header {
@@ -87,10 +91,7 @@ body {
     transition: 0.3s;
 }
 
-.campo input:focus {
-    border-color: #00ff88;
-    box-shadow: 0 0 5px #00ff88;
-}
+
 
 .btn-cadastrar {
     padding: 12px;
