@@ -1,142 +1,113 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace; /* Fonte de terminal */
 }
 
 body {
     background-color: rgb(10, 10, 10);
-    color: rgba(15, 175, 23, 0.9);
+    color: #169600;
 }
 
 .cabeca {
     background-color: black;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 10px rgba(15, 175, 23, 0.3);
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #169600;
 }
 
-.produto-container {
+/* O container principal */
+.giovanaminhamusa {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 40px;
-    padding: 40px;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 60px 5%;
     flex-wrap: wrap;
 }
 
-.produto-img {
-    max-width: 400px;
-    width: 100%;
+.molduraimg {
+    max-width: 450px;
+    border: 1px solid #169600;
+    padding: 10px;
+    background: #000;
 }
 
-.produto-img img {
+.molduraimg img {
     width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(15, 175, 23, 0.4);
+    display: block;
+    filter: brightness(0.8) contrast(1.2); /* Efeito retro */
 }
 
-.produto-info {
-    max-width: 400px;
+/* A classe vitor cuidando da info do produto */
+.vitor {
+    max-width: 450px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
+    border-left: 3px double #169600;
+    padding-left: 25px;
 }
 
-.produto-info h1 {
-    font-size: 2rem;
+.vitor h1 {
+    font-size: 2.5rem;
+    letter-spacing: -1px;
 }
 
 .preco {
-    font-size: 1.8rem;
-    font-weight: bold;
+    font-size: 2rem;
     color: #00ff88;
+    font-weight: bold;
 }
 
 .descricao {
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-button {
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.btn-comprar {
-    background-color: #00ff88;
-    color: black;
-    font-weight: bold;
-}
-
-.btn-comprar:hover {
-    background-color: #00cc6a;
-    transform: translateY(-2px);
-}
-
-.btn-carrinho {
-    background-color: transparent;
-    border: 1px solid #00ff88;
+    line-height: 1.6;
     color: #00ff88;
 }
 
-.btn-carrinho:hover {
-    background-color: #00ff88;
+/* Classe butao personalizada */
+.butao {
+    background: transparent;
+    border: 1px solid #169600;
+    color: #169600;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.butao:hover {
+    background: #169600;
     color: black;
-    transform: translateY(-2px);
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
 }
 
 .detalhes {
-    padding: 40px;
-    text-align: center;
+    padding: 40px 10%;
+    background: #0a0a0a;
+    border-top: 1px dashed #169600;
 }
 
 .detalhes h2 {
-    margin-bottom: 15px;
-}
-
-.detalhes p {
-    max-width: 600px;
-    margin: auto;
-    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
 }
 
 .pe {
-    background-color: black;
     text-align: center;
-    padding: 20px;
-    margin-top: 30px;
+    padding: 30px;
+    color: #054100;
 }
 
 @media (max-width: 768px) {
-    .produto-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .produto-info {
-        align-items: center;
-    }
-
-    .produto-info h1 {
-        font-size: 1.5rem;
-    }
-
-    .preco {
-        font-size: 1.5rem;
-    }
-}
-
-.footer-bottom {
-    text-align: center;
-    padding: 15px;
-    border-top: 1px solid #222; 
-    font-size: 0.85rem;
-    color: #ccc;
+    .giovanaminhamusa { flex-direction: column; align-items: center; }
+    .vitor { border-left: none; border-top: 3px double #169600; padding: 20px 0; }
 }

@@ -53,11 +53,11 @@ const produtos = {
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 
-const nome = document.getElementById("nome-produto");
-const preco = document.getElementById("preco-produto");
-const imagem = document.getElementById("imagem-produto");
-const descricao = document.getElementById("descricao-produto");
-const detalhes = document.getElementById("detalhes-produto");
+const nome = document.getElementById("nomeproduto");
+const preco = document.getElementById("precoproduto");
+const imagem = document.getElementById("imagemproduto");
+const descricao = document.getElementById("descricaoproduto");
+const detalhes = document.getElementById("detalhesproduto");
 
 if (produtos[id]) {
     nome.textContent = produtos[id].nome;
@@ -69,8 +69,8 @@ if (produtos[id]) {
     nome.textContent = "Produto não encontrado";
 }
 
-const btnComprar = document.querySelector(".btn-comprar");
-const btnCarrinho = document.querySelector(".btn-carrinho");
+const btnComprar = document.querySelector(".btncomprar");
+const btnCarrinho = document.querySelector(".btncarrinho");
 
 btnComprar.addEventListener("click", () => {
     alert("Compra realizada!");
