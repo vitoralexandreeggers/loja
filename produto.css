@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace; /* Fonte de terminal */
+    font-family: 'Courier New', Courier, monospace; 
 }
 
 body {
@@ -19,7 +19,6 @@ body {
     border-bottom: 2px solid #169600;
 }
 
-/* O container principal */
 .giovanaminhamusa {
     display: flex;
     justify-content: center;
@@ -39,10 +38,9 @@ body {
 .molduraimg img {
     width: 100%;
     display: block;
-    filter: brightness(0.8) contrast(1.2); /* Efeito retro */
+    filter: brightness(0.8) contrast(1.2); 
 }
 
-/* A classe vitor cuidando da info do produto */
 .vitor {
     max-width: 450px;
     display: flex;
