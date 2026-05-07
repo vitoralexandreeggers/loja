@@ -1,0 +1,50 @@
+[
+    {
+        "id": "ps1",
+        "nome": "PS1",
+        "preco": "R$ 700",
+        "imagem": "imagems/ps1.png",
+        "descricao": "Primeiro Playstation.",
+        "detalhes": "Clássico retrô para fãs de nostalgia."
+    },
+    {
+        "id": "ps2",
+        "nome": "PS2",
+        "preco": "R$ 900",
+        "imagem": "imagems/ps2.png",
+        "descricao": "Playstation 2 raiz.",
+        "detalhes": "Um dos consoles mais vendidos da história."
+    },
+    {
+        "id": "ps3",
+        "nome": "PS3",
+        "preco": "R$ 1.500",
+        "imagem": "imagems/ps3.jpg.jpg",
+        "descricao": "Console Playstation 3 clássico.",
+        "detalhes": "Possui diversos jogos incríveis e ótimo custo benefício."
+    },
+    {
+        "id": "xbox",
+        "nome": "Xbox Clássico",
+        "preco": "R$ 1.800",
+        "imagem": "imagems/xbox.png",
+        "descricao": "Primeiro Xbox.",
+        "detalhes": "Console raiz da Microsoft."
+    },
+    {
+        "id": "xbox36",
+        "nome": "Xbox 360",
+        "preco": "R$ 1.000",
+        "imagem": "imagems/xbox360.png",
+        "descricao": "Console Xbox 360.",
+        "detalhes": "Perfeito para jogos antigos e multiplayer local."
+    },
+    {
+        "id": "dreamcast",
+        "nome": "Dreamcast",
+        "preco": "R$ 1.500",
+        "imagem": "imagems/dreamcast.png",
+        "descricao": "Console da Sega.",
+        "detalhes": "Apesar de pouco popular, tem jogos excelentes."
+    }
+]

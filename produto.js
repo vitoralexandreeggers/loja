@@ -1,82 +1,51 @@
+async function carregarDados() {
+    const destino = document.getElementById('destino');
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get("id");
 
-const produtos = {
+    try {
+        const response = await fetch('ramalho.json');
+        const produtos = await response.json();
 
-    ps1: {
-        nome: "PS1",
-        preco: "R$ 700",
-        imagem: "imagems/ps1.png",
-        descricao: "Primeiro Playstation.",
-        detalhes: "Clássico retrô para fãs de nostalgia."
-    }, 
+        if (destino) {
+            destino.innerHTML = '';
+            produtos.forEach(item => {
+                const link = document.createElement('a');
+                link.href = `produto.html?id=${item.id}`;
+                link.className = 'linkp';
+                link.innerHTML = `
+                    <div class="card">
+                        <img src="${item.imagem}" alt="imagem" class="cardimg">
+                        <h1 class="cardh1">${item.nome}</h1>
+                        <p class="produtopreco">${item.preco}</p>
+                        <p class="cardp">${item.descricao}</p>
+                    </div>
+                `;
+                destino.appendChild(link);
+            });
+        }
 
-    ps2: {
-        nome: "PS2",
-        preco: "R$ 900",
-        imagem: "imagems/ps2.png",
-        descricao: "Playstation 2 raiz.",
-        detalhes: "Um dos consoles mais vendidos da história."
-    },
-
-    ps3: {
-        nome: "PS3",
-        preco: "R$ 1.500",
-        imagem: "imagems/ps3.jpg.jpg",
-        descricao: "Console Playstation 3 clássico.",
-        detalhes: "Possui diversos jogos incríveis e ótimo custo benefício."
-    },
-
-    xbox: {
-        nome: "Xbox Clássico",
-        preco: "R$ 1.800",
-        imagem: "imagems/xbox.png",
-        descricao: "Primeiro Xbox.",
-        detalhes: "Console raiz da Microsoft."
-    },
-
-    xbox36: {
-        nome: "Xbox 360",
-        preco: "R$ 1.000",
-        imagem: "imagems/xbox360.png",
-        descricao: "Console Xbox 360.",
-        detalhes: "Perfeito para jogos antigos e multiplayer local."
-    },
-
-    dreamcast: {
-        nome: "Dreamcast",
-        preco: "R$ 1.500",
-        imagem: "imagems/dreamcast.png",
-        descricao: "Console da Sega.",
-        detalhes: "Apesar de pouco popular, tem jogos excelentes."
+        if (id && document.getElementById("nomeproduto")) {
+            const prod = produtos.find(p => p.id === id);
+            if (prod) {
+                document.getElementById("nomeproduto").textContent = prod.nome;
+                document.getElementById("precoproduto").textContent = prod.preco;
+                document.getElementById("imagemproduto").src = prod.imagem;
+                document.getElementById("descricaoproduto").textContent = prod.descricao;
+                document.getElementById("detalhesproduto").textContent = prod.detalhes;
+            }
+        }
+    } catch (error) {
+        console.error("Erro ao carregar JSON:", error);
     }
-};
-
-const params = new URLSearchParams(window.location.search);
-const id = params.get("id");
-
-const nome = document.getElementById("nomeproduto");
-const preco = document.getElementById("precoproduto");
-const imagem = document.getElementById("imagemproduto");
-const descricao = document.getElementById("descricaoproduto");
-const detalhes = document.getElementById("detalhesproduto");
-
-if (produtos[id]) {
-    nome.textContent = produtos[id].nome;
-    preco.textContent = produtos[id].preco;
-    imagem.src = produtos[id].imagem;
-    descricao.textContent = produtos[id].descricao;
-    detalhes.textContent = produtos[id].detalhes;
-} else {
-    nome.textContent = "Produto não encontrado";
 }
 
-const btnComprar = document.querySelector(".btncomprar");
-const btnCarrinho = document.querySelector(".btncarrinho");
+document.addEventListener('DOMContentLoaded', carregarDados);
 
-btnComprar.addEventListener("click", () => {
-    alert("Compra realizada!");
-});
-
-btnCarrinho.addEventListener("click", () => {
-    
-    alert("Produto adicionado ao carrinho!");
-});
+const mobileMenu = document.getElementById('mobile-menu');
+const navLinks = document.querySelector('.nav-links');
+if (mobileMenu) {
+    mobileMenu.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+}

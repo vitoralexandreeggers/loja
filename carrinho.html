@@ -7,37 +7,19 @@
     <link rel="stylesheet" href="carrinho.css">
 </head>
 <body class="corpocarrinho">
-
     <header class="cabeca">
         <h1 class="logo">SISTEMA CARRINHO</h1>
         <a href="index.html" class="butao"> VOLTAR </a>
     </header>
 
     <main class="euamogiovana">
-        <div class="listaprodutos">
-            <div class="giovana">
-                <img src="imagems/ps2.png" alt="PS2">
-                <div class="detalhesitem">
-                    <h3>PLAYSTATION 2</h3>
-                    <p>VALOR: R$ 50,00</p>
-                    <button class="butao">REMOVER</button>
-                </div>
-            </div>
-
-            <div class="giovana">
-                <img src="imagems/dreamcast.png" alt="Dreamcast">
-                <div class="detalhesitem">
-                    <h3>SEGA DREAMCAST</h3>
-                    <p>VALOR: R$ 456.456,00</p>
-                    <button class="butao">REMOVER</button>
-                </div>
-            </div>
+        <div class="listaprodutos" id="lista-carrinho">
+            <p style="padding: 20px;">Seu carrinho está vazio.</p>
         </div>
-
         <aside class="resumo">
             <h2>RESUMO DA COMPRA</h2>
             <div class="totalbox">
-                <p>TOTAL: <span>R$ 456.506,00</span></p>
+                <p>TOTAL: <span id="total-valor">R$ 0,00</span></p>
             </div>
             <button class="butao">CONFIRMAR COMPRA</button>
         </aside>
@@ -46,6 +28,6 @@
     <footer class="pe">
         <p>CONSOLE_SYSTEM v1.0 - 2026</p>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
