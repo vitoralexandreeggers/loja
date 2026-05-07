@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="body">
+<body onload="carregarProdutos()" class="body" >
     <header class="cabeca">
         <nav class="navbar">
             <div class="logo">Loja</div>
@@ -25,7 +25,9 @@
 
     <main class="tronco" id="tronco">
         <h1 class="produtosh1">Consoles</h1>
-        <div class="mae" id="destino"></div>
+        <div class="mae" id="destino">
+            <p></p>
+        </div>
     </main>
 
     <aside class="braco">
@@ -36,6 +38,6 @@
        <p>Disponíveis no mercado desde 1/2026</p>
     </section>
 
-    <script src="script.js"></script>
+    <script src="produto.js"></script>
 </body>
 </html>

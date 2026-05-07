@@ -7,6 +7,7 @@
         "descricao": "Primeiro Playstation.",
         "detalhes": "Clássico retrô para fãs de nostalgia."
     },
+
     {
         "id": "ps2",
         "nome": "PS2",
@@ -15,6 +16,7 @@
         "descricao": "Playstation 2 raiz.",
         "detalhes": "Um dos consoles mais vendidos da história."
     },
+
     {
         "id": "ps3",
         "nome": "PS3",
@@ -23,6 +25,7 @@
         "descricao": "Console Playstation 3 clássico.",
         "detalhes": "Possui diversos jogos incríveis e ótimo custo benefício."
     },
+
     {
         "id": "xbox",
         "nome": "Xbox Clássico",
@@ -31,6 +34,7 @@
         "descricao": "Primeiro Xbox.",
         "detalhes": "Console raiz da Microsoft."
     },
+
     {
         "id": "xbox36",
         "nome": "Xbox 360",
@@ -39,6 +43,7 @@
         "descricao": "Console Xbox 360.",
         "detalhes": "Perfeito para jogos antigos e multiplayer local."
     },
+    
     {
         "id": "dreamcast",
         "nome": "Dreamcast",
